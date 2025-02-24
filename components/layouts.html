@@ -1,0 +1,111 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Layouts</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/raster2.css">
+  <link rel="stylesheet" href="/custom.css">
+</head>
+<body>
+  <!-- Basic 2 Column Grid -->
+  <r-grid columns="2" columns-s="1" class="padding1">
+    <r-cell>
+      <h3>Two Column Grid</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </r-cell>
+    <r-cell>
+      <img src="https://placehold.co/800x400" alt="Placeholder" class="w-full">
+    </r-cell>
+  </r-grid>
+
+  <hr>
+
+  <!-- 3 Column Grid -->
+  <r-grid columns="3" columns-s="1" class="padding1">
+    <r-cell>
+      <h4>Column One</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </r-cell>
+    <r-cell>
+      <h4>Column Two</h4>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </r-cell>
+    <r-cell>
+      <h4>Column Three</h4>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+    </r-cell>
+  </r-grid>
+
+  <hr>
+
+  <!-- Spanning Multiple Columns -->
+  <r-grid columns="4" columns-s="1" class="padding1">
+    <r-cell span="1-3">
+      <h3>Spanning Three Columns</h3>
+      <p>This cell spans from column 1 to 3, taking up 75% of the grid width.</p>
+    </r-cell>
+    <r-cell>
+      <p>Single column cell</p>
+    </r-cell>
+  </r-grid>
+
+  <hr>
+
+  <!-- Starting at Specific Column -->
+  <r-grid columns="6" columns-s="1" class="padding1">
+    <r-cell span="2-4">
+      <img src="https://placehold.co/800x400" alt="Placeholder" class="w-full">
+    </r-cell>
+    <r-cell span="4-6">
+      <h4>Starting at Column 4</h4>
+      <p>This content starts at column 4 and extends to column 6.</p>
+      <img src="https://placehold.co/800x400" alt="Placeholder" class="w-full">
+    </r-cell>
+  </r-grid>
+
+  <hr>
+
+  <!-- Complex Layout -->
+  <r-grid columns="12" columns-s="1" class="padding1">
+    <r-cell span="1-4">
+      <h4>Columns 1-4</h4>
+      <p>Spanning first third of the grid.</p>
+    </r-cell>
+    <r-cell span="5-8">
+      <h4>Columns 5-8</h4>
+      <p>Spanning middle third of the grid.</p>
+    </r-cell>
+    <r-cell span="9-12">
+      <h4>Columns 9-12</h4>
+      <p>Spanning last third of the grid.</p>
+    </r-cell>
+    <r-cell span="1-6">
+      <img src="https://placehold.co/800x400" alt="Placeholder" class="w-full">
+    </r-cell>
+    <r-cell span="7-12">
+      <img src="https://placehold.co/800x400" alt="Placeholder" class="w-full">
+    </r-cell>
+  </r-grid>
+
+  <hr>
+
+  <!-- Full Width Row -->
+  <r-grid columns="3" columns-s="1" class="padding1">
+    <r-cell span="row">
+      <h2>Full Width Content</h2>
+      <p>This content spans the entire width of the grid using span="row".</p>
+    </r-cell>
+    <r-cell>
+      <p>Back to regular columns.</p>
+    </r-cell>
+    <r-cell>
+      <p>Regular column content.</p>
+    </r-cell>
+    <r-cell>
+      <p>Regular column content.</p>
+    </r-cell>
+  </r-grid>
+</body>
+</html>
