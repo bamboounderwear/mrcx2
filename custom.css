@@ -1,6 +1,13 @@
 /* Custom CSS goes here */
 :root {
   --navbar-height: calc(var(--lineHeight) * 2);
+  --container-padding: calc(var(--lineHeight) * 2);
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --container-padding: var(--lineHeight);
+  }
 }
 
 /* Navbar Styles */
@@ -81,7 +88,7 @@
 footer {
   background: black;
   color: white;
-  margin: 0 calc(var(--lineHeight) * -2);
+  margin: 0;
   padding: var(--lineHeight);
 }
 
@@ -154,4 +161,21 @@ footer .copyright {
 
 .gallery-card-overlay a:hover {
   border-bottom-color: white;
+}
+
+/* Container and Layout */
+body {
+  padding: var(--container-padding);
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+r-grid {
+  max-width: 100%;
 }
