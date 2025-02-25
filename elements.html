@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Bootstrap Elements</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
   <div class="container py-5">
@@ -30,92 +30,242 @@
     
     <hr>
     
-    <h2>Large Headings</h2>
-    <h1 class="display-4">Large Heading</h1>
-    <h1 class="display-3">Extra Large Heading</h1>
-    <h1 class="display-2">Extra Extra Large Heading</h1>
-    <h1 class="display-1">Largest Heading</h1>
-    
-    <hr>
-    
-    <h2>Links</h2>
-    <p><a href="#">Regular Link</a></p>
-    <h2><a href="#" class="text-dark text-decoration-none">Heading Link</a></h2>
-    <p class="small"><a href="#">Small Link</a></p>
-    
-    <hr>
-    
-    <h2>Lists</h2>
-    <h3>Unordered List</h3>
-    <ul>
-      <li>First item</li>
-      <li>Second item</li>
-      <li>Third item</li>
-    </ul>
-    
-    <h3>Ordered List</h3>
-    <ol>
-      <li>First item</li>
-      <li>Second item</li>
-      <li>Third item</li>
-    </ol>
-    
-    <h3>Compact Lists</h3>
-    <ul class="list-unstyled mb-4">
-      <li>Compact unordered list item</li>
-      <li>Another compact item</li>
-      <li>Final compact item</li>
-    </ul>
-    
-    <ol class="list-unstyled">
-      <li>1. Compact ordered list item</li>
-      <li>2. Another compact item</li>
-      <li>3. Final compact item</li>
-    </ol>
-    
-    <h3>Task List</h3>
-    <ul class="list-unstyled">
-      <li class="mb-2">
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="task1">
-          <label class="form-check-label" for="task1">Unchecked task</label>
-        </div>
-      </li>
-      <li>
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="task2" checked>
-          <label class="form-check-label" for="task2">Checked task</label>
-        </div>
-      </li>
-    </ul>
-    
-    <hr>
-    
-    <h2>Text Alignment</h2>
-    <p class="text-start">Left-aligned text</p>
-    <p class="text-center">Center-aligned text</p>
-    <p class="text-end">Right-aligned text</p>
-    
-    <hr>
-    
-    <h2>Opacity Classes</h2>
-    <div class="row">
-      <div class="col"><p class="opacity-10">10%</p></div>
-      <div class="col"><p class="opacity-25">25%</p></div>
-      <div class="col"><p class="opacity-50">50%</p></div>
-      <div class="col"><p class="opacity-75">75%</p></div>
-      <div class="col"><p class="opacity-100">100%</p></div>
+    <h2>Buttons</h2>
+    <div class="mb-4">
+      <button type="button" class="btn btn-primary me-2">Primary</button>
+      <button type="button" class="btn btn-secondary me-2">Secondary</button>
+      <button type="button" class="btn btn-success me-2">Success</button>
+      <button type="button" class="btn btn-danger me-2">Danger</button>
+      <button type="button" class="btn btn-warning me-2">Warning</button>
+      <button type="button" class="btn btn-info me-2">Info</button>
     </div>
     
-    <hr>
-    
-    <h2>Colors</h2>
-    <div class="row">
-      <div class="col"><p class="text-danger">Red Text</p></div>
-      <div class="col"><p class="text-primary">Blue Text</p></div>
-      <div class="col"><p class="text-success">Green Text</p></div>
-      <div class="col"><p class="text-warning">Yellow Text</p></div>
+    <div class="mb-4">
+      <button type="button" class="btn btn-outline-primary me-2">Primary</button>
+      <button type="button" class="btn btn-outline-secondary me-2">Secondary</button>
+      <button type="button" class="btn btn-outline-success me-2">Success</button>
+      <button type="button" class="btn btn-outline-danger me-2">Danger</button>
     </div>
+    
+    <div class="mb-4">
+      <button type="button" class="btn btn-primary btn-lg me-2">Large Button</button>
+      <button type="button" class="btn btn-secondary me-2">Regular Button</button>
+      <button type="button" class="btn btn-success btn-sm">Small Button</button>
+    </div>
+
+    <hr>
+
+    <h2>Modals</h2>
+    <div class="mb-4">
+      <!-- Basic Modal -->
+      <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#basicModal">
+        Basic Modal
+      </button>
+
+      <!-- Form Modal -->
+      <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#formModal">
+        Form Modal
+      </button>
+
+      <!-- Large Modal -->
+      <button type="button" class="btn btn-info me-2" data-bs-toggle="modal" data-bs-target="#largeModal">
+        Large Modal
+      </button>
+    </div>
+
+    <!-- Basic Modal -->
+    <div class="modal fade" id="basicModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Basic Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>This is a basic modal dialog window.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Contact Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Large Modal -->
+    <div class="modal fade" id="largeModal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Large Modal</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p>This is a larger modal dialog window with more content space.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Forms</h2>
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInput" class="form-label">Text Input</label>
+            <input type="text" class="form-control" id="exampleInput" placeholder="Enter text">
+          </div>
+          <div class="mb-3">
+            <label for="exampleSelect" class="form-label">Select Menu</label>
+            <select class="form-select" id="exampleSelect">
+              <option selected>Choose an option</option>
+              <option value="1">Option One</option>
+              <option value="2">Option Two</option>
+              <option value="3">Option Three</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleTextarea" class="form-label">Textarea</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check this box</label>
+          </div>
+          <div class="mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio1">
+              <label class="form-check-label" for="flexRadio1">
+                First radio
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio2">
+              <label class="form-check-label" for="flexRadio2">
+                Second radio
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Alerts</h2>
+    <div class="mb-4">
+      <div class="alert alert-primary mb-3" role="alert">
+        This is a primary alert
+      </div>
+      <div class="alert alert-success mb-3" role="alert">
+        This is a success alert
+      </div>
+      <div class="alert alert-danger mb-3" role="alert">
+        This is a danger alert
+      </div>
+      <div class="alert alert-warning mb-3" role="alert">
+        This is a warning alert
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Badges</h2>
+    <div class="mb-4">
+      <span class="badge bg-primary me-2">Primary</span>
+      <span class="badge bg-secondary me-2">Secondary</span>
+      <span class="badge bg-success me-2">Success</span>
+      <span class="badge bg-danger me-2">Danger</span>
+      <span class="badge bg-warning text-dark me-2">Warning</span>
+      <span class="badge bg-info text-dark me-2">Info</span>
+    </div>
+
+    <hr>
+
+    <h2>Progress Bars</h2>
+    <div class="mb-4">
+      <div class="progress mb-3">
+        <div class="progress-bar" role="progressbar" style="width: 25%"></div>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 50%"></div>
+      </div>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-info" role="progressbar" style="width: 75%"></div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar bg-warning" role="progressbar" style="width: 100%"></div>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Spinners</h2>
+    <div class="mb-4">
+      <div class="spinner-border text-primary me-2" role="status"></div>
+      <div class="spinner-border text-secondary me-2" role="status"></div>
+      <div class="spinner-border text-success me-2" role="status"></div>
+      <div class="spinner-border text-danger me-2" role="status"></div>
+      <div class="spinner-grow text-warning me-2" role="status"></div>
+      <div class="spinner-grow text-info me-2" role="status"></div>
+    </div>
+
+    <hr>
+
+    <h2>Cards</h2>
+    <div class="row mb-4">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+
+  <script src="/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
