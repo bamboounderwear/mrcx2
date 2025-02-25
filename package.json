@@ -1,8 +1,13 @@
 {
+  "name": "stackblitz-live-server",
+  "version": "1.0.0",
+  "description": "A simple live preview dev server for HTML on StackBlitz",
+  "main": "index.html",
   "scripts": {
-    "start": "servor --reload"
+    "start": "lite-server"
   },
-  "dependencies": {
-    "servor": "^4.0.2"
+  "dependencies": {},
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }
