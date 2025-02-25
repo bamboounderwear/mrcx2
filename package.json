@@ -1,8 +1,15 @@
 {
   "scripts": {
-    "start": "servor --reload"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "servor": "^4.0.2"
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "vite": "^4.4.9"
   }
 }
